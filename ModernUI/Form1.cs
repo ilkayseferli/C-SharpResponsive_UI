@@ -50,7 +50,7 @@ namespace ModernUI
             int index = random.Next(ThemeColor.colorList.Count);
             //ÖRN:colorList içinde 8 adet veri varsa random bize 0'dan 8'e kadar bir sayı verir o sayıda index'e atanır.
             
-            while (tempIndex == index)
+            while (tempIndex == index)  
             {
                 index = random.Next(ThemeColor.colorList.Count);
             }
@@ -188,27 +188,27 @@ namespace ModernUI
 
         private void btnOrders_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormProduct(), sender);
+            OpenChildForm(new Forms.FormOrders(), sender);
         }
 
         private void btnCustomer_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormProduct(), sender);
+            OpenChildForm(new Forms.FormCustomer(), sender);
         }
 
         private void btnReporting_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormProduct(), sender);
+            OpenChildForm(new Forms.FormReporting(), sender);
         }
 
         private void btnNotification_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormProduct(), sender);
+            OpenChildForm(new Forms.FormNotification(), sender);
         }
 
         private void btnsettings_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormProduct(), sender);
+            OpenChildForm(new Forms.FormSettings(), sender);
         }
 
         private void btnCloseChildForm_Click(object sender, EventArgs e)
